@@ -1,0 +1,31 @@
+.. title: Teaser of the new PyQt-based eyegrade user interface
+.. slug: teaser-of-the-new-pyqt-based-eyegrade-user-interface
+.. date: 2013/01/02 00:05:48
+.. tags: eyegrade, screenshots, pyqt
+.. link: 
+.. description: 
+
+I'm programming from scratch the graphical user interface of
+Eyegrade. The old user interface uses Pygame. It allowed me to build
+the first interface of the program very quickly, but now its lack of
+graphical components (buttons, dialogues, menus, etc.) was preventing me
+from programming a more user-friendly interface.  I've decided to use
+`PyQt <http://www.riverbankcomputing.co.uk/software/pyqt/>`_ for the
+new interface. Why PyQt? I programmed a game with Qt in C++ many years
+ago, and I liked the library a lot. With the python bindings it is
+even easier to use.
+
+The new user interface will be released with Eyegrade 0.2 (hopefully,
+before before the end of January). In the mean time, the brave can
+give it a try (it is available at the `development branch of
+Eyegrade at GitHub
+<https://github.com/jfisteus/eyegrade>`_). Suggestions are welcome
+(just post a comment here or write me an email.) I have tested it only
+in Linux, although it should work in Windows too. Remember to install
+PyQt (package *python-qt4* in Debian and Ubuntu).
+
+Check the first `screenshots gallery </galleries/screenshots-new-gui-1/>`_!
+
+.. figure:: /galleries/screenshots-new-gui-1/screenshot-4.png
+   :class: thumbnail
+   :alt: Screenshot of the new user interface of Eyegrade

@@ -10,11 +10,11 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
-BLOG_URL = "http://nikola.ralsina.com.ar"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BLOG_AUTHOR = "Jesús Arias Fisteus"
+BLOG_TITLE = "The Eyegrade Blog"
+BLOG_URL = "http://www.it.uc3m.es/jaf/eyegrade/blog"
+BLOG_EMAIL = ""
+BLOG_DESCRIPTION = "The Eyegrade blog."
 
 
 # post_pages contains (wildcard, destination, template, use_in_feed) tuples.
@@ -203,13 +203,13 @@ DATE_FORMAT = '%Y-%m-%d %H:%M'
 # I recomment using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en">
 <img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML)
-CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = 'Contents &copy; {date} {author} - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year)
@@ -217,7 +217,8 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # To enable comments via Disqus, you need to create a forum at
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
-DISQUS_FORUM = "nikolademo"
+#DISQUS_FORUM = "nikolademo"
+DISQUS_FORUM = False
 
 # Enable Addthis social buttons?
 # Defaults to true
@@ -281,9 +282,9 @@ GLOBAL_CONTEXT = {
         DEFAULT_LANG: (
             ('/' + os.path.join(ARCHIVE_PATH, ARCHIVE_FILENAME), 'Archives'),
             ('/categories/index.html', 'Tags'),
-            ('/stories/about-nikola.html', 'About Nikola'),
-            ('/stories/handbook.html', 'The Nikola Handbook'),
-            ('http://nikola.ralsina.com.ar', 'Powered by Nikola!'),
+            ('../', 'Eyegrade web site'),
+            ## ('/stories/handbook.html', 'The Nikola Handbook'),
+            ## ('http://nikola.ralsina.com.ar', 'Powered by Nikola!'),
             ),
         }
     }

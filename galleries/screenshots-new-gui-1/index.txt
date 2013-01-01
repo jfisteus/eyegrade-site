@@ -1,0 +1,2 @@
+Some screenshots of the new PyQt-based user interface of the upcoming
+Eyegrade 0.2.
