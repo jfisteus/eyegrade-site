@@ -221,7 +221,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
 #DISQUS_FORUM = "nikolademo"
-DISQUS_FORUM = False
+DISQUS_FORUM = 'eyegrade'
 
 # Enable Addthis social buttons?
 # Defaults to true
