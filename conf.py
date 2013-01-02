@@ -12,7 +12,7 @@ import time
 # Data about this site
 BLOG_AUTHOR = "Jesús Arias Fisteus"
 BLOG_TITLE = "The Eyegrade Blog"
-BLOG_URL = "http://www.it.uc3m.es/jaf/eyegrade/blog"
+BLOG_URL = "http://www.it.uc3m.es/jaf/eyegrade/blog/"
 BLOG_EMAIL = ""
 BLOG_DESCRIPTION = "The Eyegrade blog."
 
@@ -137,7 +137,10 @@ REDIRECTIONS = []
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = [
+    'rsync -rav --delete output/* ~/www/eyegrade/blog',
+    '~/bin/synchro.sh varpa www',
+    ]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -282,7 +285,7 @@ GLOBAL_CONTEXT = {
         DEFAULT_LANG: (
             ('/' + os.path.join(ARCHIVE_PATH, ARCHIVE_FILENAME), 'Archives'),
             ('/categories/index.html', 'Tags'),
-            ('../', 'Eyegrade web site'),
+            ('http://www.it.uc3m.es/jaf/eyegrade/', 'Eyegrade web site'),
             ## ('/stories/handbook.html', 'The Nikola Handbook'),
             ## ('http://nikola.ralsina.com.ar', 'Powered by Nikola!'),
             ),
