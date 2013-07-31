@@ -13,7 +13,7 @@ BLOG_AUTHOR = "Jesús Arias Fisteus"
 BLOG_TITLE = "The Eyegrade Blog"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "The Eyegrade Blog"
+SITE_URL = "http://eyegrade.org/blog"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://nikola.ralsina.com.ar"
