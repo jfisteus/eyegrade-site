@@ -30,6 +30,8 @@ BLOG_DESCRIPTION = "Blog for the free software tool Eyegrade"  # (translatable)
 
 INDEX_PATH = "blog"
 
+LOGO_URL = '/assets/img/title-logo.svg'
+
 # Nikola is multilingual!
 #
 # Currently supported languages are:
