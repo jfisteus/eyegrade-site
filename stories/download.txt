@@ -25,7 +25,7 @@ on that platform are welcome.
 
 If you are trying Eyegrade for the first time,
 you may want to go through the
-`quick start guide <quick-start-guide.html>`_.
+`quick start guide <../quick-start-guide/index.html>`_.
 
 Checksums
 ............
